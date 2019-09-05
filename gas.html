@@ -109,12 +109,60 @@
   <div class="card">
     <div class="card-header" id="headingTwo">
       <h5 class="mb-0 text-center">
-        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          How to reset Gas Keys
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          How to program a new Gas Key
         </button>
       </h5>
     </div>
+
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        <h4>Pump setup</h4>
+        <ol>
+                <li>Open reader at pump (key required)</li>
+                <li>Turn off power</li>
+                <li>On "Switch Two", press toggle "No6" down</li>
+                <li>Turn power on</li>
+                <li>Select "No" on options screen until you reach "program chip key"</li>
+                <li>Select "Yes" when you read "program chip key"</li>
+                <li>Select "Yes" for "System Format 2"</li>
+                <li>Type in "0700"- Click "Enter"</li>
+                <li>Type in thirteen 0's then enter key number (0000000000000xx) - There should be a total of 15 digits with the 0's and the two-digit key number</li>
+                <li>Select "No" for "Odometer" reading</li>
+                <li>Set the limit to 0</li>
+                <li>Insert key</li>
+                <li>Remove key when prompted</li>
+                <li>Repeat steps 1 and 2</li>
+                <li>On "Switch Two", press toggle "No6" up</li>
+                <li>Turn power on</li>
+                <li>Close and lock reader</li>
+        </ol>
+        <h4>Computer setup</h4>
+        <ol>
+                <li>Open "Phoenix"</li>
+                <li>Select "Site Information"</li>
+                <li>Click on "Cards"</li>
+                <li>Select Account</li>
+                <li>Set card type to "Single"</li>
+                <li>Click "New"</li>
+                <li>Enter account number (0700) followed by thirteen 0's and the key number (07000000000000000xx)</li>
+                <li>Name the account</li>
+                <li>Setup PIN</li>
+                <li>Update card</li>
+                <li>Poll site</li>
+                <li>Make sure the final validation screen appears with card number and PIN</li>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0 text-center">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          How to reset Gas Keys (after 3 bad PIN entries)
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
       <div class="card-body">
         <ol>
                   <li>Open Phoenix
@@ -148,14 +196,14 @@
     </div>
   </div>
   <div class="card">
-    <div class="card-header" id="headingThree">
+    <div class="card-header" id="headingFour">
       <h5 class="mb-0 text-center">
-        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
           How to order Gas
         </button>
       </h5>
     </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
       <div class="card-body">
         <ol>
                 <li>Call Fox Fuel at 2000 gallons (215-659-1616)</li>
