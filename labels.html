@@ -88,14 +88,13 @@ $('body').html(restorepage);
     <div class="card-header" id="headingOne">
       <h5 class="mb-0 text-center">
         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          How to print labels for cars (ERAccess)
+          How to print labels for cars (ERAccess) <button id="print" onclick="printContent('collapseOne');" >Print</button>
         </button>
       </h5>
     </div>
 
     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
       <div class="card-body">
-        <button id="print" onclick="printContent('collapseOne');" >Print</button>
         <ol>
                   <li>Login to ERAccess
                     <br><a href="https://raw.githubusercontent.com/spartanboosts/spartanboosts.github.io/master/images/era/big/era1.PNG" target="_blank"><center><img src="images/era/small/era1.png" class="img-fluid"></center></a></li><br></li>
