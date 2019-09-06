@@ -16,6 +16,15 @@
   <!--CUSTOM CSS-->
   <link href="vendor/bootstrap/css/pdi.css" rel="stylesheet">
 
+<script>
+function printContent(el){
+var restorepage = $('body').html();
+var printcontent = $('#' + el).clone();
+$('body').empty().html(printcontent);
+window.print();
+$('body').html(restorepage);
+}
+</script>
 
 
 </head>
@@ -86,6 +95,7 @@
 
     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
       <div class="card-body">
+        <button id="print" onclick="printContent('collapseOne');" >Print</button>
         <ol>
                   <li>Login to ERAccess
                     <br><a href="https://raw.githubusercontent.com/spartanboosts/spartanboosts.github.io/master/images/era/big/era1.PNG" target="_blank"><center><img src="images/era/small/era1.png" class="img-fluid"></center></a></li><br></li>
